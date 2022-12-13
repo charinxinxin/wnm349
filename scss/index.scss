@@ -1,4 +1,6 @@
 $basecolor: #479789;
+$white: #fff;
+$black: #000;
 $color1: #ECC848;
 $color2: #EDD3F2;
 $color3: #5CA0ED;
@@ -6,10 +8,10 @@ $color4: #E26E43;
 $color5: #70B487;
 $color6: #8563BE;
 
-$column-length:12;
-$column-gap: 10px;
-$gutter-size: 0.1;
-$side-column-width: 180px;
+$text-1-align: left;
+$item-align: center;
+
+$zise1: 30px;
 
 $container-map:(
   xs:0
@@ -60,14 +62,14 @@ $positioning-map:(
 }
 
 header {
-  background-color: #000;
+  background-color: $black;
 
   h1 {
     padding: 10px;
   }
 
   .fr {
-    margin-right: 30px;
+    margin-right: $zise1;
 
     .sure {
       font-weight: bold;
@@ -78,7 +80,7 @@ header {
       line-height: 100px;
       display: inline-block;
       margin: 0 20px;
-      color: #fff;
+      color: $white;
     }
 
     a:hover {
@@ -89,8 +91,8 @@ header {
 
 main {
   .topline {
-    padding: 30px;
-    background-color: #000;
+    padding: $zise1;
+    background-color: $black;
 
     >.fl {
       width: 50%;
@@ -99,15 +101,15 @@ main {
       .tit {
         font-size: 30px;
         line-height: 90px;
-        color: #fff;
+        color: $white;
       }
 
       .desc {
         color: #575757;
-        text-align: left;
+        text-align: $text-1-align;
         padding: 10px;
         font-size: 14px;
-        line-height: 30px;
+        line-height: $zise1;
       }
     }
   }
@@ -125,13 +127,13 @@ main {
     // flex-grow: 0;
 
     >.tit {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
       font-size: 120px;
       font-weight: bold;
       padding: 0 40px;
       display: flex;
-      align-items: center;
+      align-items: $item-align;
     }
 
     .contxt {
@@ -141,14 +143,14 @@ main {
       flex-shrink: 1;
 
       .tit {
-        text-align: left;
+        text-align: $text-1-align;
         font-size: 40px;
-        color: #fff;
+        color: $white;
       }
 
       .desc {
-        text-align: left;
-        color: #fff;
+        text-align: $text-1-align;
+        color: $white;
       }
 
 
@@ -168,7 +170,7 @@ main {
     flex-grow: 0;
     display: block;
     overflow: hidden;
-    background-color: #000;
+    background-color: $black;
 
     .contxt,
     >.tit {
@@ -179,9 +181,9 @@ main {
       box-sizing: border-box;
       font-size: 30px;
       line-height: 1;
-      color: #fff;
+      color: $white;
       display: flex;
-      align-items: center;
+      align-items: $item-align;
 
     }
 
@@ -191,20 +193,20 @@ main {
       box-sizing: border-box;
 
       .tit {
-        text-align: left;
+        text-align: $text-1-align;
         font-size: 40px;
-        color: #fff;
+        color: $white;
       }
 
       .desc {
-        text-align: left;
-        color: #fff;
+        text-align: $text-1-align;
+        color: $white;
       }
     }
 
     >.tit {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
       font-size: 120px;
       font-weight: bold;
       padding: 40px;
@@ -218,13 +220,13 @@ main {
     // flex-grow: 0;
 
     >.tit {
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
       font-size: 120px;
       font-weight: bold;
       padding: 0 40px;
       display: flex;
-      align-items: center;
+      align-items: $item-align;
     }
 
     .contxt {
@@ -234,14 +236,14 @@ main {
       flex-shrink: 1;
 
       .tit {
-        text-align: left;
+        text-align: $text-1-align;
         font-size: 40px;
-        color: #fff;
+        color: $white;
       }
 
       .desc {
-        text-align: left;
-        color: #fff;
+        text-align: $text-1-align;
+        color: $white;
       }
 
 
@@ -340,9 +342,9 @@ main {
         padding: 0 30px;
         box-sizing: border-box;
         line-height: 1;
-        color: #fff;
+        color: $white;
         display: flex;
-        align-items: center;
+        align-items: $item-align;
 
       }
     }
@@ -404,14 +406,14 @@ main {
         flex-shrink: 1;
 
         .tit {
-          text-align: left;
+          text-align: $text-1-align;
           font-size: 40px;
-          color: #fff;
+          color: $white;
         }
 
         .desc {
-          text-align: left;
-          color: #fff;
+          text-align: $text-1-align;
+          color: $white;
         }
 
 
@@ -430,7 +432,7 @@ main {
 
 /* 页脚 */
 footer {
-  background-color: #000;
+  background-color: $black;
   padding: 30px 120px;
 
   .btn {
@@ -438,10 +440,10 @@ footer {
   }
 
   .tit {
-    text-align: left;
+    text-align: $text-1-align;
     font-weight: bold;
     padding-bottom: 30px;
-    color: #fff;
+    color: $white;
     font-size: 18px;
   }
 
@@ -452,7 +454,7 @@ footer {
   }
 
   a:hover {
-    color: #fff;
+    color: $white;
     font-weight: bold;
   }
 
@@ -484,7 +486,7 @@ footer {
 
       a {
         margin: 0;
-        text-align: center;
+        text-align: $item-align;
         width: 33%;
         font-size: 14px;
         line-height: 30px;
@@ -515,7 +517,7 @@ footer {
 
       >.tit {
         padding: 0;
-        text-align: center;
+        text-align: $item-align;
         display: block;
       }
 
@@ -537,7 +539,7 @@ footer {
       .tit {
         width: 100%;
         display: block;
-        text-align: center;
+        text-align: $item-align;
       }
     }
   }
@@ -552,7 +554,7 @@ footer {
         p,
         a {
           display: block;
-          text-align: center;
+          text-align: $item-align;
         }
       }
     }
